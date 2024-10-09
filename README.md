@@ -39,7 +39,7 @@ If you want to opt for SSH, follow these steps:
 
 2. Generate an SSH key with the following command (press enter for everything):
    ```sh
-   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ssh-keygen -t ed25519 -C "yeri@redvelvet.com"
    ```
 3. Copy the public SSH key to your clipboard
    ```sh
@@ -47,8 +47,13 @@ If you want to opt for SSH, follow these steps:
    ```
 4.  Go to GitHub --> Settings --> SSH and GPG keys --> New SSH key
 
-5. Paste the public key and you are all set 
+5. Paste the public key
 
+6. Configure the name/email used for your git operations in a terminal:
+   ```sh
+   git config --global user.name "Yeri"
+   git config --global user.email "yeri@redvelvet.com"
+   ```
 ## How to survive
 
 Now that you are all set, you have decided to code and now you have changes in your repository. How can you see that? 
